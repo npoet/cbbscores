@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import {
   FaGlobeAmericas,
-  FaGraduationCap,
   FaCalendarDay,
   FaMoon,
   FaSun,
@@ -37,10 +36,6 @@ const TopBar = ({ onFilterChange, onFilterReset, hasLiveGames }) => {
     }
   }, [theme, mounted]);
 
-  const handleCollegeFootball = () => {
-    onFilterChange(['FBS', 'FCS']);
-  };
-
   const handleToday = () => {
     onFilterChange('TODAY');
   };
@@ -69,9 +64,6 @@ const TopBar = ({ onFilterChange, onFilterReset, hasLiveGames }) => {
         </button>
         <button onClick={handleToday} title="Today">
           <FaCalendarDay />
-        </button>
-        <button onClick={handleCollegeFootball} title="College Football">
-          <FaGraduationCap />
         </button>
       </div>
 
