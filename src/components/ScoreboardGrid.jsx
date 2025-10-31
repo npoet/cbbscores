@@ -63,7 +63,7 @@ const ScoreboardGrid = () => {
     today.setHours(0, 0, 0, 0);
 
     if (filter === 'TODAY') {
-      return gameDate.getTime() =scores== today.getTime();
+      return gameDate.getTime() === today.getTime();
     }
 
     if (filter === 'LIVE') {
