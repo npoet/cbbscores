@@ -1,0 +1,30 @@
+{
+  "name": "cbbscores",
+  "version": "1.0.0",
+  "description": "A scoreboard app and statistical reference for college basketball and more.",
+  "main": "next.config.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npoet/cbbscores.git"
+  },
+  "bugs": {
+    "url": "https://github.com/npoet/cbbscores/issues"
+  },
+  "homepage": "https://github.com/npoet/cbbscores#readme",
+  "dependencies": {
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.9.2",
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}
