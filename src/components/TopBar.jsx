@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import {
   FaGlobeAmericas,
   FaCalendarDay,
+  FaGraduationCap,
+  FaBasketball,
   FaMoon,
   FaSun,
 } from 'react-icons/fa';
@@ -44,6 +46,14 @@ const TopBar = ({ onFilterChange, onFilterReset, hasLiveGames }) => {
     onFilterChange('LIVE');
   };
 
+  const handleCollege = () => {
+    onFilterChange('CBB');
+  }
+
+  const handlePro = () => {
+    onFilterChange('NBA');
+  }
+
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
@@ -64,6 +74,12 @@ const TopBar = ({ onFilterChange, onFilterReset, hasLiveGames }) => {
         </button>
         <button onClick={handleToday} title="Today">
           <FaCalendarDay />
+        </button>
+        <button onClick={handleCollege} title="NCAAM">
+          <FaGraduationCap />
+        </button>
+        <button onClick={handlePro} title="NBA">
+          <FaBasketball />
         </button>
       </div>
 
