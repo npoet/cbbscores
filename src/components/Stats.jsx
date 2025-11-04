@@ -8,15 +8,15 @@ const Stats = ({ data, isLive, isFinal }) => {
         home,
         home_record,
         home_conf,
-        home_pass,
-        home_rush,
-        home_rec,
+        home_pts_leader,
+        home_ast_leader,
+        home_reb_leader,
         away,
         away_record,
         away_conf,
-        away_pass,
-        away_rush,
-        away_rec,
+        away_pts_leader,
+        away_ast_leader,
+        away_reb_leader,
         pass_leader,
         rush_leader,
         rec_leader,
@@ -34,14 +34,14 @@ const Stats = ({ data, isLive, isFinal }) => {
             {isLive ? (
                 <div>
                     <div className="stat">
-                        <h3><p>Game Leaders:</p></h3>
-                        <p>{pass_leader}</p>
-                        <p>{rush_leader}</p>
-                        <p>{rec_leader}</p>
-                    </div>
-                    <div className="stat">
-                        <h3><p>Situation:</p></h3>
-                        <p>{down_distance}</p>
+                        <h3><p>{home} Leaders:</p></h3>
+                        <p>{home_pts_leader}</p>
+                        <p>{home_ast_leader}</p>
+                        <p>{home_reb_leader}</p>
+                        <h3><p>{away} Leaders:</p></h3>
+                        <p>{away_pts_leader}</p>
+                        <p>{away_ast_leader}</p>
+                        <p>{away_reb_leader}</p>
                     </div>
                     <div className="stat">
                         <h3><p>Last Play:</p></h3>
