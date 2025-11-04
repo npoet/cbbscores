@@ -54,10 +54,15 @@ const Stats = ({ data, isLive, isFinal }) => {
                 </div>
             ) : isFinal ? (
                 <div>
-                    <div>
-                        <p>{pass_leader}</p>
-                        <p>{rush_leader}</p>
-                        <p>{rec_leader}</p>
+                    <div className="stat">
+                        <h3><p>{home} Leaders:</p></h3>
+                        <p>{home_pts_leader}</p>
+                        <p>{home_ast_leader}</p>
+                        <p>{home_reb_leader}</p>
+                        <h3><p>{away} Leaders:</p></h3>
+                        <p>{away_pts_leader}</p>
+                        <p>{away_ast_leader}</p>
+                        <p>{away_reb_leader}</p>
                     </div>
                     <div className="stat">
                         <h3><a href={box_score} target="_blank" rel="noopener noreferrer">Box Score</a></h3>
@@ -68,20 +73,7 @@ const Stats = ({ data, isLive, isFinal }) => {
                 </div>
             ) : (
                 <div>
-                    <div className="stat">
-                        <h3><p>{away} {away_record}</p></h3>
-                        <p>Leaders:</p>
-                        <p>{away_pass}</p>
-                        <p>{away_rush}</p>
-                        <p>{away_rec}</p>
-                    </div>
-                    <div className="stat">
-                        <h3><p>{home} {home_record}</p></h3>
-                        <p>Leaders:</p>
-                        <p>{home_pass}</p>
-                        <p>{home_rush}</p>
-                        <p>{home_rec}</p>
-                    </div>
+
                 </div>
             )}
         </div>
