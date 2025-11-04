@@ -5,7 +5,7 @@ import {
   FaGlobeAmericas,
   FaCalendarDay,
   FaGraduationCap,
-  FaBasketball,
+  FaBasketballBall,
   FaMoon,
   FaSun,
 } from 'react-icons/fa';
