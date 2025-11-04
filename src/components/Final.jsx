@@ -14,9 +14,12 @@ const Final = ({ data, onHomeLogoClick, onAwayLogoClick }) => {
         away_logo,
         away_score,
         away_record,
-        pass_leader,
-        rush_leader,
-        rec_leader,
+        home_pts_leader,
+        home_ast_leader,
+        home_reb_leader,
+        away_pts_leader,
+        away_ast_leader,
+        away_reb_leader,
         headline,
         time
     } = data;
@@ -46,13 +49,23 @@ const Final = ({ data, onHomeLogoClick, onAwayLogoClick }) => {
             </div>
             <div className="stats">
                 {headline ? (
-                    <p>{headline}</p>
+                  <p>{headline}</p>
                 ) : (
-                    <div className="stats-min">
-                        <p>{pass_leader}</p>
-                        <p>{rush_leader}</p>
-                        <p>{rec_leader}</p>
-                    </div>
+                  <div className="stats-min">
+                    {home_score > away_score ? (
+                      <>
+                        <p>{home_pts_leader}</p>
+                        <p>{home_reb_leader}</p>
+                        <p>{home_ast_leader}</p>
+                      </>
+                    ) : (
+                      <>
+                        <p>{away_pts_leader}</p>
+                        <p>{away_reb_leader}</p>
+                        <p>{away_ast_leader}</p>
+                      </>
+                    )}
+                  </div>
                 )}
             </div>
         </div>
