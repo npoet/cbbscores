@@ -79,7 +79,7 @@ const TopBar = ({ onFilterChange, onFilterReset, hasLiveGames }) => {
           <FaGraduationCap />
         </button>
         <button onClick={handlePro} title="NBA">
-          <FaBasketball />
+          <FaBasketballBall />
         </button>
       </div>
 
