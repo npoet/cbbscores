@@ -80,6 +80,8 @@ const Stats = ({ data, isLive, isFinal }) => {
                         <p>{home_pts_leader}</p>
                         <p>{home_ast_leader}</p>
                         <p>{home_reb_leader}</p>
+                    </div>
+                    <div className="stat">
                         <h3><p>{away} Leaders:</p></h3>
                         <p>{away_pts_leader}</p>
                         <p>{away_ast_leader}</p>
